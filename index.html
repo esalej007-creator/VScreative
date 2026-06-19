@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head
   overflow: visible;
 }
 
-/* Неоновая линия снизу */
 .site-header::after {
   content: "";
   position: absolute;
@@ -533,7 +532,6 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head
   right: 0;
 }
 
-/* Затемнение фона */
 .mobile-menu-overlay {
   background: rgba(2, 8, 20, 0.68);
   backdrop-filter: blur(8px);
@@ -541,7 +539,6 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head
   z-index: 100010;
 }
 
-/* Логотип */
 .mobile-logo {
   display: block;
   width: fit-content;
@@ -554,7 +551,6 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head
   height: auto;
 }
 
-/* Навигация */
 .mobile-nav {
   display: flex;
   flex-direction: column;
@@ -1101,8 +1097,8 @@ box-shadow:
 }
 
 #contacts-popup .icons a.icon img {
-    width: 28px;       /* ширина иконки */
-    height: 28px;      /* высота иконки */
+    width: 28px;      
+    height: 28px;     
     object-fit: contain;
     cursor: pointer;
     transition: opacity .25s ease;
@@ -1133,17 +1129,13 @@ document.addEventListener("DOMContentLoaded", () => {
         popup.classList.add("show");
     });
 
-    // Скрыть при уходе мыши с shape
     trigger.addEventListener("mouseleave", () => {
         setTimeout(() => {
             if (!popup.matches(":hover")) popup.classList.remove("show");
         }, 100);
     });
 
-    // Скрыть при уходе мыши с popup
     popup.addEventListener("mouseleave", () => popup.classList.remove("show"));
-
-    // Крестик закрытия
     popup.querySelector(".close").addEventListener("click", () => popup.classList.remove("show"));
 
 });
