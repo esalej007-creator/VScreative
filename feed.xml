@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<yml_catalog date="2026-06-16 23:00">
+<yml_catalog date="2026-06-19 20:00">
   <shop>
     <name>VSCreative</name>
     <company>Веб студия креатива VS Creative</company>
@@ -23,7 +23,9 @@
         <description>Идеально подходит для презентации услуги или продукта. Включает комплексную работу от анализа конкурентов до SEO-оптимизации и поддержки 24/7.</description>
         <param name="Анализ рынка и конкурентов">Да</param>
         <param name="Проработка структуры и текстов">Да</param>
+        <param name="Работа с анимацией">Да</param>
         <param name="Адаптивная верстка">Да</param>
+        <param name="Подключение форм для приема заявок">Да</param>
         <param name="SEO-оптимизация">Да</param>
         <param name="Подключение аналитики">Да</param>
         <param name="Поддержка">24/7</param>
@@ -37,10 +39,14 @@
         <categoryId>1</categoryId>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Создание полноценного многостраничного сайта с проработкой структуры, прототипированием, созданием внутренних страниц, интеграцией сервисов, аналитики и поддержкой 24/7.</description>
+        <param name="Анализ рынка и конкурентов">Да</param>
+        <param name="Проработка структуры и текстов">Да</param>
         <param name="Создание прототипа">Да</param>
         <param name="Фото и видео для наполнения">Да</param>
         <param name="Адаптивная верстка">Да</param>
+        <param name="Работа с анимацией">Да</param>
         <param name="SEO-оптимизация">Да</param>
+        <param name="Подключение форм для приема заявок">Да</param>
         <param name="Подключение аналитики">Да</param>
         <param name="Поддержка">24/7</param>
       </offer>
@@ -53,10 +59,16 @@
         <categoryId>1</categoryId>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Создание интернет-магазина под ключ. Настройка каталога, карточек товаров, фильтров, корзины и онлайн-оплаты. Подключение XML-выгрузки, аналитики и SEO-оптимизация.</description>
+        <param name="Анализ рынка и конкурентов">Да</param>
+        <param name="Проработка структуры и текстов">Да</param>
+        <param name="Фото и видео для наполнения">Да</param>
         <param name="Каталог товаров">Да</param>
         <param name="Корзина и оплата">Да</param>
         <param name="Интеграция XML / выгрузка">Да</param>
+        <param name="Интеграция сервисов">Да</param>
         <param name="Адаптивная верстка">Да</param>
+        <param name="Подключение форм для приема заявок">Да</param>
+        <param name="Подключение аналитики">Да</param>
         <param name="SEO-оптимизация">Да</param>
         <param name="Поддержка">24/7</param>
       </offer>
@@ -71,9 +83,14 @@
         <description>Полноценная платформа для представления компании в интернете. Демонстрация услуг и продуктов, знакомство с командой, интеграция с CRM и внутренними сервисами, обучение сотрудников.</description>
         <param name="Дизайн корп. стиля">Да</param>
         <param name="Интеграция с CRM">Да</param>
+        <param name="Личные страницы сотрудников с контактной информацией (при необходимости)">Да</param>
         <param name="Обучение сотрудников">Да</param>
         <param name="Адаптивная верстка">Да</param>
+        <param name="Настройка каталога товаров или услуг">Да</param>
+        <param name="Создание разделов, фильтров">При необходимости</param>
+        <param name="Подключение форм для приема заявок">Да</param>
         <param name="SEO-оптимизация">Да</param>
+        <param name="Создание корзины и оплаты">При необходимости</param>
         <param name="Поддержка">24/7</param>
       </offer>
 
