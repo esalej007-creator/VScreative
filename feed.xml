@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<yml_catalog date="2026-06-16 23:00">
+  <shop>
+    <name>VSCreative</name>
+    <company>Веб студия креатива VS Creative</company>
+    <url>https://vscreative.ru/</url>
+    <email>esalej.vsk@mail.ru</email>
+    <currencies>
+      <currency id="RUR" rate="1" />
+    </currencies>
+    <categories>
+      <category id="1">Разработка сайтов</category>
+    </categories>
+    <offers>
+      
+      <offer id="web_landing">
+        <name>Разработка одностраничного сайта (Лендинг)</name>
+        <url>https://vscreative.ru/</url>
+        <price>30200</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
+        <description>Идеально подходит для презентации услуги или продукта. Включает комплексную работу от анализа конкурентов до SEO-оптимизации и поддержки 24/7.</description>
+        <param name="Анализ рынка и конкурентов">Да</param>
+        <param name="Проработка структуры и текстов">Да</param>
+        <param name="Адаптивная верстка">Да</param>
+        <param name="SEO-оптимизация">Да</param>
+        <param name="Подключение аналитики">Да</param>
+        <param name="Поддержка">24/7</param>
+      </offer>
+
+      <offer id="web_corporate_multi">
+        <name>Разработка многостраничного сайта</name>
+        <url>https://vscreative.ru/</url>
+        <price>45000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
+        <description>Создание полноценного многостраничного сайта с проработкой структуры, прототипированием, созданием внутренних страниц, интеграцией сервисов, аналитики и поддержкой 24/7.</description>
+        <param name="Создание прототипа">Да</param>
+        <param name="Фото и видео для наполнения">Да</param>
+        <param name="Адаптивная верстка">Да</param>
+        <param name="SEO-оптимизация">Да</param>
+        <param name="Подключение аналитики">Да</param>
+        <param name="Поддержка">24/7</param>
+      </offer>
+
+      <offer id="web_ecommerce">
+        <name>Разработка интернет-магазина</name>
+        <url>https://vscreative.ru/</url>
+        <price>71000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
+        <description>Создание интернет-магазина под ключ. Настройка каталога, карточек товаров, фильтров, корзины и онлайн-оплаты. Подключение XML-выгрузки, аналитики и SEO-оптимизация.</description>
+        <param name="Каталог товаров">Да</param>
+        <param name="Корзина и оплата">Да</param>
+        <param name="Интеграция XML / выгрузка">Да</param>
+        <param name="Адаптивная верстка">Да</param>
+        <param name="SEO-оптимизация">Да</param>
+        <param name="Поддержка">24/7</param>
+      </offer>
+
+      <offer id="web_corporate_main">
+        <name>Разработка корпоративного сайта</name>
+        <url>https://vscreative.ru/</url>
+        <price>80000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
+        <description>Полноценная платформа для представления компании в интернете. Демонстрация услуг и продуктов, знакомство с командой, интеграция с CRM и внутренними сервисами, обучение сотрудников.</description>
+        <param name="Дизайн корп. стиля">Да</param>
+        <param name="Интеграция с CRM">Да</param>
+        <param name="Обучение сотрудников">Да</param>
+        <param name="Адаптивная верстка">Да</param>
+        <param name="SEO-оптимизация">Да</param>
+        <param name="Поддержка">24/7</param>
+      </offer>
+
+    </offers>
+  </shop>
+</yml_catalog>
