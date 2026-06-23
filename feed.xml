@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<yml_catalog date="2026-06-20 08:00">
+<yml_catalog date="2026-06-23 16:00">
   <shop>
     <name>VSCreative</name>
     <company>Веб студия креатива VS Creative</company>
@@ -17,7 +17,7 @@
       <offer id="web_landing">
         <name>Веб-студия VS Creative: Разработка одностраничного сайта (Лендинг)</name>
         <url>https://vscreative.ru/</url>
-        <price>30200</price>
+        <price>25200</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
