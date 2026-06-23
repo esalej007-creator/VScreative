@@ -23,6 +23,8 @@
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Идеально подходит для презентации услуги или продукта. Включает комплексную работу от анализа конкурентов до SEO-оптимизации и поддержки 24/7.</description>
         <param name="годы опыта">7</param>
+        <param name="рейтинг">5.0</param>
+        <param name="число отзывов">16</param>
         <param name="регион">Россия</param>
         <param name="конверсия">18</param>
         <param name="Анализ рынка и конкурентов">Да</param>
@@ -44,6 +46,8 @@
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Создание полноценного многостраничного сайта с проработкой структуры, прототипированием, созданием внутренних страниц, интеграцией сервисов, аналитики и поддержкой 24/7.</description>
         <param name="годы опыта">7</param>
+        <param name="рейтинг">5.0</param>
+        <param name="число отзывов">16</param>
         <param name="регион">Россия</param>
         <param name="конверсия">18</param>
         <param name="Анализ рынка и конкурентов">Да</param>
@@ -67,6 +71,8 @@
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Создание интернет-магазина под ключ. Настройка каталога, карточек товаров, фильтров, корзины и онлайн-оплаты. Подключение XML-выгрузки, аналитики и SEO-оптимизация.</description>
         <param name="годы опыта">7</param>
+        <param name="рейтинг">5.0</param>
+        <param name="число отзывов">16</param>
         <param name="регион">Россия</param>
         <param name="конверсия">18</param>
         <param name="Анализ рынка и конкурентов">Да</param>
@@ -92,6 +98,8 @@
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Полноценная платформа для представления компании в интернете. Демонстрация услуг и продуктов, знакомство с командой, интеграция с CRM и внутренними сервисами, обучение сотрудников.</description>
         <param name="годы опыта">7</param>
+        <param name="рейтинг">5.0</param>
+        <param name="число отзывов">16</param>
         <param name="регион">Россия</param>
         <param name="конверсия">18</param>
         <param name="Дизайн корп. стиля">Да</param>
