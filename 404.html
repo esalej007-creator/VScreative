@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta name="robots" content="noindex">
-    <title>404 Page Not Found.</title>
+    <meta charset="UTF-8">
+    <title>Страница не найдена | VS Creative</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключите ваш основной CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #050a14; /* Темный фон сайта */
+            font-family: sans-serif;
+        }
+        .vs-error-container {
+            text-align: center;
+            background: rgba(8, 20, 40, 0.42);
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            padding: 60px;
+            max-width: 600px;
+            color: #fff;
+        }
+        h1 { font-size: 80px; margin: 0; }
+        p { font-size: 18px; margin: 20px 0; }
+        .vs-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .vs-button:hover { background: rgba(255, 255, 255, 0.2); }
+    </style>
 </head>
-<body style="
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#eee;
-    font-family:sans-serif;
-">
-<div style="text-align:center;">
-    <a href="https://tilda.cc">
-        <img src="//tilda.ws/img/logo404.png"
-             width="120"
-             height="88"
-             alt="Tilda">
-    </a>
+<body>
 
-    <br><br><br><br>
+    <div class="vs-error-container">
+        <h1>404</h1>
+        <p>К сожалению, страница, которую вы ищете, не найдена или была перемещена.</p>
+        <a href="/" class="vs-button">Вернуться на главную</a>
+    </div>
 
-    <b>404 Page not found</b>
-</div>
 </body>
 </html>
