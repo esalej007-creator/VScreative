@@ -1093,6 +1093,68 @@ document.addEventListener("DOMContentLoaded", () => {
     margin-top: 5px;
     display: flex; 
 }
+@media (max-width: 768px) {
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  .tariff-card {
+    min-width: 280px;
+    max-width: 280px;
+    scroll-snap-align: center;
+  }
+
+  .pricing-container::-webkit-scrollbar {
+    height: 4px;
+  }
+  .pricing-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+  }
+}
+@media (max-width: 768px) {
+  .wide-container {
+    width: 95% !important;
+    margin: 20px auto !important;
+    overflow-x: hidden; 
+  }
+
+  .adv-card-wide {
+    margin-top: 50px !important;
+    padding: 15px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+  .card-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important; 
+    overflow: hidden;
+  }
+  .pricing-container {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    gap: 10px !important;
+    padding-bottom: 20px !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tariff-card {
+    min-width: 260px !important; 
+    max-width: 260px !important;
+    flex-shrink: 0 !important;
+  }
+}
 </style>
 
 <div class="wide-container">
