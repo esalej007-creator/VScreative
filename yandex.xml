@@ -20,7 +20,6 @@
         <price>25200</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
-        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка одностраничного сайта (Лендинг)</description>
         <param name="Годы опыта">7</param>
@@ -44,7 +43,6 @@
         <price>46200</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
-        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка многостраничного сайта</description>
         <param name="Годы опыта">7</param>
@@ -70,7 +68,6 @@
         <price>71000</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
-        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка интернет-магазина</description>
         <param name="Годы опыта">7</param>
@@ -98,7 +95,6 @@
         <price>80000</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
-        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка корпоративного сайта</description>
         <param name="Годы опыта">7</param>
