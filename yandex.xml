@@ -6,14 +6,18 @@
     <url>https://vscreative.ru/</url>
     <email>esalej.vsk@mail.ru</email>
     <phone>+7 (964) 482-29-65</phone>
-    <currencies>
+<currencies>
       <currency id="RUR" rate="1" />
     </currencies>
     <categories>
       <category id="1">Разработка сайтов</category>
     </categories>
+    <sets>
+      <set id="1">
+        <name>Портфолио услуг ВСК</name>
+      </set>
+    </sets>
     <offers>
-      
       <offer id="web_landing">
         <name>Салей Егор</name>
         <url>https://vscreative.ru/landing</url>
