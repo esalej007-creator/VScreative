@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<yml_catalog date="2026-07-01 22:37">
+<yml_catalog date="2026-07-03 11:00">
   <shop>
     <name>Салей Егор</name>
     <company>VS Creative</company>
     <url>https://vscreative.ru/</url>
     <email>esalej.vsk@mail.ru</email>
     <phone>+7 (964) 482-29-65</phone>
-<currencies>
-      <currency id="RUR" rate="1" />
+    <currencies>
+      <currency id="RUR" rate="1"/>
     </currencies>
     <categories>
       <category id="1">Разработка сайтов</category>
@@ -24,6 +24,7 @@
         <price>25200</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
+        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка одностраничного сайта (Лендинг)</description>
         <param name="Годы опыта">7</param>
@@ -40,13 +41,13 @@
         <param name="Подключение аналитики">Да</param>
         <param name="Поддержка">24/7</param>
       </offer>
-
       <offer id="web_corporate_multi">
         <name>Салей Егор</name>
         <url>https://vscreative.ru/web_corporate_multi</url>
         <price>46200</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
+        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка многостраничного сайта</description>
         <param name="Годы опыта">7</param>
@@ -65,13 +66,13 @@
         <param name="Подключение аналитики">Да</param>
         <param name="Поддержка">24/7</param>
       </offer>
-
       <offer id="web_ecommerce">
         <name>Салей Егор</name>
         <url>https://vscreative.ru/web_ecommerce</url>
         <price>71000</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
+        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка интернет-магазина</description>
         <param name="Годы опыта">7</param>
@@ -92,13 +93,13 @@
         <param name="SEO-оптимизация">Да</param>
         <param name="Поддержка">24/7</param>
       </offer>
-
       <offer id="web_corporate_main">
         <name>Салей Егор</name>
         <url>https://vscreative.ru/web_corporate_main</url>
         <price>80000</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
+        <set-ids>1</set-ids>
         <picture>https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%20%D1%81%20%D1%84%D0%BE%D0%BD%D0%BE%D0%BC.png</picture>
         <description>Разработка корпоративного сайта</description>
         <param name="Годы опыта">7</param>
@@ -118,7 +119,6 @@
         <param name="Создание корзины и оплаты">При необходимости</param>
         <param name="Поддержка">24/7</param>
       </offer>
-
     </offers>
   </shop>
 </yml_catalog>
