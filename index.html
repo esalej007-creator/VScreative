@@ -2276,123 +2276,188 @@ body {
   overflow: hidden;
 }
 </style> <!-- nominify end --> </div> </div> </div> </div>
-    <html lang="ru">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .unique-slider-container {
-            position: relative;
-            max-width: 1580px;
-            width: 100%;
-            margin: 0 auto;
-            margin-bottom: 40px;
-            margin-top: 100px;
-        }
-
-        .unique-slider-wrapper {
-            position: relative;
-            width: 100%;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .unique-slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out; 
-            pointer-events: none;
-            display: block;
-        }
-
-        .unique-slide.active {
-            opacity: 1;
-            position: relative; 
-            pointer-events: auto;
-        }
-
-.unique-slide img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 21 / 7; 
-            object-fit: cover;
-            display: block;
-        }
-        .unique-slider-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 38, 169, 0.9);
-            color: #fff;
-            border: solid 1px;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-            opacity: 0;
-            transition: all 0.3s ease;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .unique-prev { left: -25px; }
-        .unique-next { right: -25px; }
-
-        .unique-slider-container:hover .unique-slider-arrow { opacity: 1; }
-        .unique-slider-arrow:hover { background: rgba(0, 38, 169, 0.9); transform: translateY(-50%) scale(1.1); }
-
-        @media (max-width: 768px) {
-            .unique-slider-arrow { width: 30px; height: 30px; opacity: 1; }
-            .unique-prev { left: 10px; }
-            .unique-next { right: 10px; }
-            .unique-slider-wrapper { border-radius: 10px; }
-             
-        }
-@media (max-width: 768px) {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
     .unique-slider-container {
-        width: 95% !important;
-        margin: 10px auto !important; 
-        padding-top: 0 !important;
-margin-top: 80px !important;
-margin-bottom: -80px !important;
+        position: relative;
+        max-width: 1580px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: 100px;
+    }
+
+    .unique-slider-wrapper {
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .unique-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out; 
+        pointer-events: none;
+        display: block;
+        /* ВАЖНО: теперь кнопки позиционируются относительно слайда */
+        position: relative; 
+    }
+
+    .unique-slide.active {
+        opacity: 1;
+        position: relative; 
+        pointer-events: auto;
     }
 
     .unique-slide img {
-        width: 100% !important;
-        height: auto !important;
-        object-fit: contain !important; 
-        aspect-ratio: auto !important;  
+        width: 100%;
+        height: auto;
+        aspect-ratio: 21 / 7; 
+        object-fit: cover;
         display: block;
     }
-    
-    .unique-slider-arrow {
-        display: none !important; 
+
+    /* === СТИЛИ ДЛЯ ИНДИВИДУАЛЬНЫХ КНОПОК НА СЛАЙДАХ === */
+    .slide-btn {
+        position: absolute;
+        padding: 12px 24px;
+        background-color: #00dcff; /* Цвет заливки */
+        color: #0a1834;            /* Цвет текста */
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 220, 255, 0.4);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+        z-index: 5;
     }
-}
-    </style>
+
+    .slide-btn:hover {
+        transform: scale(1.05);
+        background-color: #fff;
+    }
+
+    /* НАСТРОЙКА КООРДИНАТ ДЛЯ КАЖДОЙ КНОПКИ (В ПРОЦЕНТАХ) */
+    /* Слайд 1: Снизу слева */
+    .btn-pos-1 {
+        bottom: 15%;
+        left: 10%;
+    }
+
+    /* Слайд 2: По центру */
+    .btn-pos-2 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Центрирование */
+    }
+    .btn-pos-2:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    /* Слайд 3: Справа вверху */
+    .btn-pos-3 {
+        top: 20%;
+        right: 12%;
+    }
+
+    /* Адаптив под мобильные устройства */
+    @media (max-width: 768px) {
+        .slide-btn {
+            padding: 8px 16px;
+            font-size: 12px;
+        }
+    }
+    /* ================================================= */
+
+    .unique-slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(10, 24, 52, 0.32);
+        color: rgba(0, 220, 255, 0.35);
+        border: 1px solid rgba(0, 220, 255, 0.35);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .unique-prev { left: -25px; }
+    .unique-next { right: -25px; }
+
+    .unique-slider-container:hover .unique-slider-arrow { opacity: 1; }
+    .unique-slider-arrow:hover { background: rgba(0, 38, 169, 0.9); transform: translateY(-50%) scale(1.1); }
+
+    @media (max-width: 768px) {
+        .unique-slider-arrow { width: 30px; height: 30px; opacity: 1; }
+        .unique-prev { left: 10px; }
+        .unique-next { right: 10px; }
+        .unique-slider-wrapper { border-radius: 10px; }
+    }
+
+    @media (max-width: 768px) {
+        .unique-slider-container {
+            width: 95% !important;
+            margin: 10px auto !important; 
+            padding-top: 0 !important;
+            margin-top: 80px !important;
+            margin-bottom: -80px !important;
+        }
+
+        .unique-slide img {
+            width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important; 
+            aspect-ratio: auto !important;  
+            display: block;
+        }
+        
+        .unique-slider-arrow {
+            display: none !important; 
+        }
+    }
+</style>
+
 <style>
   #rec2149475261 {
       display: block !important;
       visibility: visible !important;
   }
 </style>
+
 <div class="unique-slider-container" id="unique-slider">
     <div class="unique-slider-wrapper">
+        <!-- Слайд 1 -->
         <a href="https://teritoriya-tepla.ru/products/PNGA0023FD446.html" class="unique-slide active">
             <img src="https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/1/1(slide).png" alt="Slide 1">
+            <button class="slide-btn btn-pos-1">Подробнее</button>
         </a>
+        
+        <!-- Слайд 2 -->
         <a href="https://teritoriya-tepla.ru/catalog?category=%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F_%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D1%87%D0%BA%D0%B8_%D0%B2%D0%BE%D0%B4%D1%8B" class="unique-slide">
             <img src="https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/1/2(slide).png" alt="Slide 2">
+            <button class="slide-btn btn-pos-2">В каталог</button>
         </a>
-                <a href="https://teritoriya-tepla.ru/catalog?category=%D0%A0%D0%B0%D0%B4%D0%B8%D0%B0%D1%82%D0%BE%D1%80%D1%8B_%D0%BE%D1%82%D0%BE%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F" class="unique-slide">
+        
+        <!-- Слайд 3 -->
+        <a href="https://teritoriya-tepla.ru/catalog?category=%D0%A0%D0%B0%D0%B4%D0%B8%D0%B0%D1%82%D0%BE%D1%80%D1%8B_%D0%BE%D1%82%D0%BE%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F" class="unique-slide">
             <img src="https://s3.twcstorage.ru/df06c409-d71b78f0-64cf-4b11-a85a-d2bdbccb2f77/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/1/3(slide).png" alt="Slide 3">
+            <button class="slide-btn btn-pos-3">Купить</button>
         </a>
     </div>
 
