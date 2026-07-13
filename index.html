@@ -2300,14 +2300,13 @@ body {
         width: 100%;
         opacity: 0;
         transition: opacity 1s ease-in-out; 
-        pointer-events: none; /* Запрещаем клики по скрытым слайдам */
+        pointer-events: none; 
     }
 
-    /* Только активный слайд становится видимым и растягивает контейнер */
     .unique-slide.active {
         opacity: 1;
         position: relative; 
-        pointer-events: auto; /* Разрешаем клики по активному слайду и кнопкам на нем */
+        pointer-events: auto;
     }
 
     .unique-slide img {
@@ -2402,7 +2401,7 @@ body {
 
         .unique-slide img {
             width: 100% !important;
-            height: auto !important;
+            height: 140px !important;
             object-fit: contain !important; 
             aspect-ratio: auto !important;  
             display: block;
@@ -2414,18 +2413,9 @@ body {
         }
     }
     @media (max-width: 768px) {
-        .btn-pos-2 {
-        top: 80%;
-        transform: translate(-50%, -50%);
+    .slide-btn {
+        display: none !important;
     }
-.btn-pos-1 {
-        bottom: 10%; 
-        left: 78%;   
-        transform: translateX(-50%);
-        top: auto; 
-        right: auto;
-    }
-        }
 </style>
 
 <style>
