@@ -1146,68 +1146,73 @@ aria-label='' role="img"> </div> </div> <div class='t396__elem tn-elem tn-elem__
 </style>
 
 <script>
-const track = document.querySelector('.slider-track');
-const slides = document.querySelectorAll('.slide');
-const dotsContainer = document.querySelector('.slider-dots');
+const heroSliderSection = document.querySelector('.hero-slider');
 
-let current = 0;
-let autoPlayTimer = null;
-const autoPlayDelay = 7000;
+if (heroSliderSection) {
+    const track = heroSliderSection.querySelector('.slider-track');
+    const heroSlides = heroSliderSection.querySelectorAll('.slider-track > .slide');
+    const dotsContainer = heroSliderSection.querySelector('.slider-dots');
 
-slides.forEach((_, index) => {
-    const dot = document.createElement('div');
-    dot.classList.add('dot');
-    if (index === 0) dot.classList.add('active');
-    
-    dot.addEventListener('click', () => {
-        current = index;
-        updateSlider();
-        resetAutoPlay();
+    let current = 0;
+    let autoPlayTimer = null;
+    const autoPlayDelay = 7000;
+
+    heroSlides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        
+        dot.addEventListener('click', () => {
+            current = index;
+            updateSlider();
+            resetAutoPlay();
+        });
+        
+        dotsContainer.appendChild(dot);
     });
-    
-    dotsContainer.appendChild(dot);
-});
 
-const dots = document.querySelectorAll('.dot');
+    const dots = dotsContainer.querySelectorAll('.dot');
 
-// 2. Функция обновления положения ленты и активности точек
-function updateSlider() {
-    // Сдвигаем ленту на (индекс * 100)% влево
-    track.style.transform = `translateX(-${current * 100}%)`;
-    
-    // Обновляем активный дотс
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[current].classList.add('active');
-}
+    function updateSlider() {
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[current]) dots[current].classList.add('active');
+    }
 
-function nextSlide() {
-    current = (current + 1) % slides.length;
-    updateSlider();
-}
+    function nextSlide() {
+        current = (current + 1) % heroSlides.length;
+        updateSlider();
+    }
 
-function prevSlide() {
-    current = (current - 1 + slides.length) % slides.length;
-    updateSlider();
-}
+    function prevSlide() {
+        current = (current - 1 + heroSlides.length) % heroSlides.length;
+        updateSlider();
+    }
 
-function resetAutoPlay() {
-    clearInterval(autoPlayTimer);
-    autoPlayTimer = setInterval(nextSlide, autoPlayDelay);
-}
+    function resetAutoPlay() {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = setInterval(nextSlide, autoPlayDelay);
+    }
 
-// Обработчики на стрелки
-document.querySelector('.next').onclick = () => {
-    nextSlide();
+    const nextBtn = heroSliderSection.querySelector('.next');
+    const prevBtn = heroSliderSection.querySelector('.prev');
+
+    if (nextBtn) {
+        nextBtn.onclick = () => {
+            nextSlide();
+            resetAutoPlay();
+        };
+    }
+
+    if (prevBtn) {
+        prevBtn.onclick = () => {
+            prevSlide();
+            resetAutoPlay();
+        };
+    }
+
     resetAutoPlay();
-};
-
-document.querySelector('.prev').onclick = () => {
-    prevSlide();
-    resetAutoPlay();
-};
-
-// Запуск автопрокрутки при старте
-resetAutoPlay();
+}
 </script>
     <div id="rec1945988691" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <section class="presentation-section"> <div class="presentation-container"> <div class="presentation-text"> <h2>Видео-презентация</h2> <p>
         Наша команда с большим вниманием и заботой подготовила для вас короткую, 
